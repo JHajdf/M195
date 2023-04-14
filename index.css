@@ -1,0 +1,184 @@
+    @charset "utf-8";
+    /* CSS Document */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        /* font-size: 62.5%; */
+        color: #000;
+        font-family: Helvetica Neue, PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+	
+    a {
+        text-decoration: none;
+		color: #000;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    .header {
+		width: 100%;
+		padding: 30px 0;
+    }
+    
+    .w {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .logo {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+		color: #000;
+        font-weight: bold;
+		font-size: 2rem;
+    }
+	.logo img{
+		margin-right: 0.625rem;
+	}
+    .menu {
+        display: flex;
+    }
+    .menu li{
+		padding: 0.5rem 1.5rem;
+		border-radius: 2rem;
+	}
+	.menu li:hover{
+		border-radius: 0.5rem;
+	}
+    .menu li:first-child {
+        margin-left: 0;
+    }
+    
+    .menu a {
+        color: #000;
+        display: block;
+        font-size: 1.4rem;
+        /* text-decoration: underline !important; */
+        font-weight: bold;
+    }
+    
+   .menu a {
+        text-decoration: none;
+    }
+    
+    .container {
+        width: 100%;
+        padding-top: 200px;
+        background: url(./img/background.png) 0px 0px no-repeat;
+        box-sizing: border-box;
+        height: calc( 100% - 110px );
+        background-size: 100% 100%;
+    }
+    
+    .content {
+		font-size: 2rem;
+        height: 100%;
+		width: 700px;
+		margin-left: 5%;
+        color: #fff;
+    }
+    .content .contentimg{
+        margin-top: 5rem;
+    }
+    .content a{
+        background: url("./img/download_button.png") center no-repeat;
+        background-size: 100%;
+        font-size: 1.5rem;
+        color:#fff;
+        padding: 2rem 2rem;
+    }
+    .content h2{
+        font-size:6rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+	
+    .privacy {
+        padding: 4rem;
+        color: #000;
+    }
+    
+    .privacy h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .privacy p {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .privacy li {
+        margin-top: 2rem;
+    }
+    
+    .privacy h3 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin: 1rem 0;
+    }
+    
+    .privacy h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    .privacy a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .privacy a:hover {
+        text-decoration: none;
+    }
+	.privacy .bold{
+		font-weight: bold;
+	}
+	/* @media screen and (max-width: 1680px){
+	  .contact{
+		  margin-left: -300px;
+	  }
+	} */
+	@media screen and (max-width: 960px){
+		.privacy {
+		    padding: 1rem 2rem;
+		    color: #000;
+		}
+		.privacy h1 {
+		    font-size: 1.6rem;
+		    line-height: 2.2rem;
+		    margin-bottom: 0;
+		}
+		.privacy p {
+		    font-size: 1rem;
+		    line-height: 2rem;
+		    margin-top: 1rem;
+		}
+	}
